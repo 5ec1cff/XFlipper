@@ -1,0 +1,17 @@
+[versions]
+agp = "8.3.0-alpha05"
+cxx = "1.2.0"
+flipper = "0.222.0"
+kotlin = "1.9.0"
+soloader = "0.10.5"
+
+[libraries]
+cxx = { module = "dev.rikka.ndk.thirdparty:cxx", version.ref = "cxx" }
+flipper = { module = "com.facebook.flipper:flipper", version.ref = "flipper" }
+soloader = { module = "com.facebook.soloader:soloader", version.ref = "soloader" }
+xposed = { module = "de.robv.android.xposed:api", version = "82" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
